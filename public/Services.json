@@ -1,0 +1,62 @@
+[
+    {
+      "_id": 1,
+      "name": "Reservation for 1-5 People",
+      "slots": [
+        "Launch Time",
+        "Afternoon",
+        "Evening",
+        "Dinner"
+      ]
+    },
+    {
+      "_id": 2,
+      "name": "Reservation for 5-10 People",
+      "slots": [
+        "Launch Time",
+        "Afternoon",
+        "Evening",
+        "Dinner"
+      ]
+    },
+    {
+      "_id": 3,
+      "name": "Reservation for 10-15 People",
+      "slots": [
+        "Launch Time",
+        "Afternoon",
+        "Evening",
+        "Dinner"
+      ]
+    },
+    {
+      "_id": 4,
+      "name": "Reservation for 15-20 People",
+      "slots": [
+        "Launch Time",
+        "Afternoon",
+        "Evening",
+        "Dinner"
+      ]
+    },
+    {
+      "_id": 5,
+      "name": "Reservation for 20-25 People",
+      "slots": [
+        "Launch Time",
+        "Afternoon",
+        "Evening",
+        "Dinner"
+      ]
+    },
+    {
+      "_id": 6,
+      "name": "Reservation for 25+ People",
+      "slots": [
+        "Launch Time",
+        "Afternoon",
+        "Evening",
+        "Dinner"
+      ]
+    }
+  ]
