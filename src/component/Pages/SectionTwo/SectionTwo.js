@@ -13,13 +13,13 @@ const SectionTwo = () => {
                             </p>
                         </div>
                         <input type="radio" id="all" name="food" />
-                        <label for="all" className="show_all">Show All</label>
+                        <label for="all" className="show_all leveled">Show All</label>
                         <input type="radio" id="breakfast" name="food" />
-                        <label for="breakfast">Breakfast All</label>
-                        <input type="radio" id="lunch" name="food" />
-                        <label for="lunch">Lunch</label>
+                        <label className="leveled" for="breakfast">Breakfast All</label>
+                        <input  type="radio" id="lunch" name="food" />
+                        <label className="leveled" for="lunch">Lunch</label>
                         <input type="radio" id="diner" name="food" />
-                        <label for="diner">Diner</label>
+                        <label className="leveled" for="diner">Diner</label>
 
                        {/* <div className='mt-20'> */}
                        <div className="breakfast menu-restaurant mt-20 text-yellow-600">
