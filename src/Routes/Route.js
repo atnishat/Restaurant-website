@@ -4,7 +4,20 @@ import Home from "../component/Pages/Home/Home";
 import Reservation from "../component/Pages/Reservation/Reservation/Reservation";
 import  Login  from "../component/Pages/Login/Login";
 import Signup from "../component/Pages/Signup/Signup";
-
+import Dashboard from "../component/Pages/Dashboard/Dashboard/Dashboard";
+import PrivateRoute from "./PrivateRoute/PrivateRoute";
+import DashboardLayOut from "../component/Layouts/DashboardLayout/DashboardLayOut";
+import MyReservation from "../component/Pages/Dashboard/MyReservation/MyReservation";
+import AllUser from "../component/Pages/Dashboard/AllUser/AllUser";
+import UseAdmin from "../hooks/UseAdmin";
+import AdminRoute from "./AdminRoute";
+import AddMenu from "../component/Pages/Dashboard/AddMenu/AddMenu";
+import SpecialMenu from "../component/Pages/Dashboard/Dashboard/SpecialMenu/SpecialMenu";
+import About from "../component/Pages/About/About";
+import AllBookings from "../component/Pages/Dashboard/AllBookings/AllBookings"
+import Menu from "../component/Pages/Menu/Menu";
+import Payment from "../component/Pages/Dashboard/Payment/Payment";
+import Contact from "../component/Pages/Shared/Contract/Contact";
 
 
 export const router = createBrowserRouter([
@@ -28,6 +41,53 @@ export const router = createBrowserRouter([
             {
                 path:'/signup',
                 element:<Signup></Signup>
+            }
+            ,
+            {
+                path:'/about',
+                element:<About></About>
+            }
+            ,
+            {
+                path:'/specialmenu',
+                element:<Menu></Menu>
+            }
+            ,
+            {
+                path:'/contract',
+                element:<Contact></Contact>
+            }
+            
+        ]
+    },
+    {
+        path:'/dashboard',
+        element:<PrivateRoute><DashboardLayOut></DashboardLayOut></PrivateRoute>,
+        children:[
+            {
+                path:'/dashboard',
+                element:<MyReservation></MyReservation>
+            }
+             ,{
+                   path:'/dashboard/allusers',
+                element:<AdminRoute><AllUser></AllUser></AdminRoute>
+            },
+            {
+                   path:'/dashboard/addmenu',
+                element:<AdminRoute><AddMenu></AddMenu></AdminRoute>
+            }
+            ,{
+                   path:'/dashboard/specialmenu',
+                element:<AdminRoute><SpecialMenu></SpecialMenu></AdminRoute>
+            }
+            ,{
+                   path:'/dashboard/allbookings',
+                element:<AdminRoute><AllBookings></AllBookings></AdminRoute>
+            }
+            ,{
+                   path:'/dashboard/payment/:id',
+                element:<PrivateRoute><Payment></Payment></PrivateRoute>,
+                loader:({params}) => fetch(`http://localhost:5000/allbookings/${params.id}`)
             }
         ]
     }

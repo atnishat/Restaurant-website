@@ -1,23 +1,30 @@
 import React from 'react';
+import image from '../../../asset/download.jpg'
 
 const ReservationOption = ({ appointmentOption, setTreatment }) => {
-    const { name, slots } = appointmentOption;
+    const { name, slots,price } = appointmentOption;
     return (
-        <div className="card shadow-xl">
-        <div className="card-body bg-yellow-600 text-center rounded-md">
-            <h2 className="text-2xl text-black font-bold text-center">{name}</h2>
-            <p className='text-black'>{slots.length > 0 ? slots[0] : 'Try Another day'}</p>
-            <p className='text-black'>{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</p>
-            <div className="card-actions justify-center">
-                <label
-                    disabled={slots.length === 0}
-                    htmlFor="booking-modal"
-                    className="btn btn-outline text-white"
-                    onClick={() => setTreatment(appointmentOption)}
-                >Book A Table</label>
+        <div className="card ml-80">
+            <div className="w-96 shadow-xl bg-black text-center rounded-md">
+                <figure><img src={image} alt="Shoes" className='h-52 w-full' /></figure>
+                <div className="card-body">
+                    <p className="text-2xl text-white font-bold text-center">{name}</p>
+                    <div className="card-actions justify-between">
+                       <div>
+                       <div className="badge badge-outline bg-slate-300 text-black p-4 mr-3 font-serif font-bold">{slots.length > 0 ? slots[0] : 'Try Another day'}</div>
+                        <div className="badge badge-outline bg-slate-300 text-black p-4 mr-3 font-serif font-bold">{slots.length} {slots.length > 1 ? 'spaces' : 'space'} available</div>
+                        <div className="badge badge-outline bg-slate-300 text-black p-4 mt-3 font-serif font-bold">Price:${price}</div>
+                       </div>
+                        <label
+                            disabled={slots.length === 0}
+                            htmlFor="booking-modal"
+                            className="btn btn-outline text-white ml-24 mt-3"
+                            onClick={() => setTreatment(appointmentOption)}
+                        >Book A Table</label>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     );
 };
 

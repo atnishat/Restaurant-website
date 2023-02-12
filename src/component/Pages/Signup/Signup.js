@@ -1,31 +1,68 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../Contexts/AuthProvider';
+import UseToken from '../../../hooks/UseToken';
 
 const Signup = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    // const { createUser, updateUser } = useContext(AuthContext);
+    const { createUser, updateUser } = useContext(AuthContext);
     const [signUpError, setSignUPError] = useState('')
-    const handleSignUp = (data) => {
-        console.log(data);
-        // setSignUPError('');
-        // createUser(data.email, data.password)
-        //     .then(result => {
-        //         const user = result.user;
-        //         console.log(user);
-        //         toast('User Created Successfully.')
-        //         const userInfo = {
-        //             displayName: data.name
-        //         }
-        //         updateUser(userInfo)
-        //             .then(() => { })
-        //             .catch(err => console.log(err));
-        //     })
-        //     .catch(error => {
-        //         console.log(error)
-        //         setSignUPError(error.message)
-        //     });
+    const [createdUserEmail, setCreatedUserEmail] = useState('')
+    const [token] = UseToken(createdUserEmail);
+    const navigate = useNavigate();
+
+
+    if(token){
+        navigate('/');
     }
+
+
+
+    const handleSignUp = (data) => {
+        // console.log(data);
+        setSignUPError('');
+        createUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                toast('User Created Successfully.')
+                const userInfo = {
+                    displayName: data.name
+                }
+                updateUser(userInfo)
+                    .then(() => { 
+                        saveUser(data.name, data.email);
+                        
+                    })
+                    .catch(err => console.log(err));
+            })
+            .catch(error => {
+                console.log(error)
+                setSignUPError(error.message)
+            });
+    }
+
+    const saveUser = (name, email) =>{
+        const user ={name, email};
+        fetch('http://localhost:5000/users', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            setCreatedUserEmail(email);
+            //  navigate('/');
+        })
+    }
+
+
+
+
 
 
     return (
@@ -60,8 +97,8 @@ const Signup = () => {
                     {signUpError && <p className='text-red-600'>{signUpError}</p>}
                 </form>
                 <p>Already have an account <Link className='text-white' to="/login">Please Login</Link></p>
-                <div className="divider">OR</div>
-                <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                {/* <div className="divider">OR</div> */}
+                {/* <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
 
             </div>
         </div>

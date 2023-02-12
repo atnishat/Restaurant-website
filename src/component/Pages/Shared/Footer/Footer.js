@@ -1,16 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import footer from '../../../asset/footer.png'
+import Design from '../../design/Design';
 
 const Footer = () => {
     return (
-        <footer
+       <div className='bg-slate-800 pt-24'>
+         <footer
         style={{
             background: `url(${footer})`,
             backgroundSize: 'cover'
+            
         }}
-    className="p-10">
-        <div className='footer'>
+    className="p-10 ">
+        <div className='footer ml-10'>
             <div>
                 <span className="footer-title">Services</span>
                 <Link to="/" className="link link-hover">Branding</Link>
@@ -33,9 +36,11 @@ const Footer = () => {
             </div>
         </div>
         <div className='text-center mt-32'>
-            <p>Copyright © 2022 - All right reserved by x Restaurant. Developed By Tasnim_Nishat</p>
+            <p>Copyright © 2022 - All right reserved by Tasnim Cuisine. Developed By Tasnim_Nishat & Ahsan Habib</p>
         </div>
     </footer>
+    {/* <Design></Design> */}
+       </div>
     );
 };
 

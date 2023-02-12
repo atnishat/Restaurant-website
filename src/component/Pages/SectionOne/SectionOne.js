@@ -4,7 +4,7 @@ import image from '../../asset/banner2.png'
 
 const SectionOne = () => {
     return (
-        <div className='mt-10'> 
+        <div className='bg-slate-800 pt-20'> 
             {/* <!-- Hero Section --> */}
             <section id="hero">
                 <div className="container">
@@ -19,8 +19,8 @@ const SectionOne = () => {
                                     environment.
                                 </p>
                                 <div className="button__wrapper">
-                                    <a href="/" className="btn primary-btn  text-white bg-gradient-to-r from-yellow-600 to-black hover:from-black hover:to-yellow-500">Explore Menu</a>
-                                    <a href="./" className="btn ml-5  text-white bg-gradient-to-r from-yellow-600 to-black hover:from-black hover:to-yellow-500">Book Table</a>
+                                    <a href="/specialmenu" className="btn primary-btn  text-white bg-gradient-to-r from-yellow-600 to-black hover:from-black hover:to-yellow-500">Special Menu</a>
+                                    <a href="/reservation" className="btn ml-5  text-white bg-gradient-to-r from-yellow-600 to-black hover:from-black hover:to-yellow-500">Book Table</a>
                                 </div>
                             </div>
                         </div>
@@ -33,6 +33,7 @@ const SectionOne = () => {
                 </div>
             </section>
             {/* <!-- End Hero Section --> */}
+            
         </div>
     );
 };
