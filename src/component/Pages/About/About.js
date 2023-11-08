@@ -1,4 +1,5 @@
 import React from 'react';
+import './about.css'
 
 const About = () => {
   return (
@@ -6,7 +7,7 @@ const About = () => {
 
 
       <>
-        <div className="relative bg-slate-800">
+        <div className="about relative bg-cyan-500">
           <div className="absolute inset-x-0 bottom-0">
             <svg
               viewBox="0 0 224 12"
@@ -29,9 +30,9 @@ const About = () => {
               </h2>
               <p className="mb-6 text-base text-white md:text-lg">
               <span className='mb-3'>A perfect hangout place with your family & friend . We try to serve the best quality delicious food with no compromise.</span> <br />
-                Address: 600 Blue Amphitheatre Parkway, Mountain View, CA 94043, USA <br />
-                Tel:(212) 620 5682; (375) 620 5682 <br />
-                Email: support@stylemixthemes.net <br />
+                Address: 600 Blue Amphitheatre Parkway, Mountain View, Boteshwar, Beside Metropolitan University <br />
+                Mob: +8801712345623<br />
+                Email: support@tasnimcuisin.net <br />
 
               </p>
 

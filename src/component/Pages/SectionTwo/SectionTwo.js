@@ -6,11 +6,11 @@ const SectionTwo = () => {
        
            
 
-            <section id="menu_list" className="section-padding bg-slate-800 body">
+            <section id="menu_list" className="mt-20 section-padding bg-base-200 body pb-32">
                 <div className="container pt-20">
                     <div className="col-md-12 text-center mb-14">
-                        <h1 className="header-h text-yellow-600 text-2xl">Menu List</h1>
-                        <p className="header-p mt-6 text-xl text-yellow-600">
+                        <h1 className="header-h text-cyan-500 text-2xl">Menu List</h1>
+                        <p className="header-p mt-6 text-xl text-cyan-500">
                             Curious which components explicitly require jQuery, our JS, a
                             omponents link below. If you’re at all .
                         </p>
@@ -25,7 +25,7 @@ const SectionTwo = () => {
                     <label className="leveled" for="diner">Diner</label>
 
                     {/* <div className='mt-20'> */}
-                    <div className="breakfast menu-restaurant mt-20 text-yellow-600">
+                    <div id='menu' className="breakfast menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             {/* <a href="/" ></a> */}
                             <a href="/" className="menu-title" data-meal-img=""
@@ -38,7 +38,7 @@ const SectionTwo = () => {
                         >
                     </div>
 
-                    <div className="breakfast menu-restaurant mt-20 text-yellow-600">
+                    <div className="breakfast menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for breakfast</a
@@ -50,7 +50,7 @@ const SectionTwo = () => {
                         >Kale, tomato & poached egg on toast Air fryer bacon</span
                         >
                     </div>
-                    <div className="breakfast menu-restaurant  text-yellow-600">
+                    <div className="breakfast menu-restaurant  text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for breakfast</a
@@ -62,7 +62,7 @@ const SectionTwo = () => {
                         >Simple nutty pancakes Breakfast bagel club</span
                         >
                     </div>
-                    <div className="breakfast menu-restaurant  text-yellow-600">
+                    <div className="breakfast menu-restaurant  text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for breakfast</a
@@ -76,7 +76,7 @@ const SectionTwo = () => {
                     </div>
                     {/* <!--END breakfast--> */}
 
-                    <div className="lunch menu-restaurant mt-20 text-yellow-600">
+                    <div className="lunch menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for lunch</a
@@ -89,7 +89,7 @@ const SectionTwo = () => {
                         >
                     </div>
 
-                    <div className="lunch menu-restaurant mt-20 text-yellow-600">
+                    <div className="lunch menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for lunch</a
@@ -101,7 +101,7 @@ const SectionTwo = () => {
                         >Toasted Pita Bowl Salad Vegan and Gluten-Free Quinoa</span
                         >
                     </div>
-                    <div className="lunch menu-restaurant text-yellow-600">
+                    <div className="lunch menu-restaurant text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for lunch</a
@@ -113,7 +113,7 @@ const SectionTwo = () => {
                         >Egg Roll in a Bowl Garden Pasta Salad With Rotini</span
                         >
                     </div>
-                    <div className="lunch menu-restaurant  text-yellow-600">
+                    <div className="lunch menu-restaurant  text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for lunch</a
@@ -126,7 +126,7 @@ const SectionTwo = () => {
                         >
                     </div>
                     {/* <!--END Lunch--> */}
-                    <div className="diner menu-restaurant mt-20 text-yellow-600">
+                    <div className="diner menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for diner</a
@@ -139,7 +139,7 @@ const SectionTwo = () => {
                         >
                     </div>
 
-                    <div className="diner menu-restaurant mt-20 text-yellow-600">
+                    <div className="diner menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for diner</a
@@ -151,7 +151,7 @@ const SectionTwo = () => {
                         >Air Fryer Fajitas Crispy Gnocchi with Sausage & Brown Butter</span
                         >
                     </div>
-                    <div className="diner menu-restaurant text-yellow-600">
+                    <div className="diner menu-restaurant text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for diner</a
@@ -163,7 +163,7 @@ const SectionTwo = () => {
                         >Bagel Pizza, Asparagus Frittata  Air Fried chicken </span
                         >
                     </div>
-                    <div className="diner menu-restaurant text-yellow-600">
+                    <div className="diner menu-restaurant text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
                             >food item for diner</a

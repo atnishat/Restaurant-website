@@ -24,10 +24,10 @@ const AvailableReservation = ({ selectedDate }) => {
     }
 
     return (
-        <section className='py-16 bg-slate-800'>
+        <section className='py-16 bg-white'>
             <p className='text-center font-bold'>Available Appointments on {format(selectedDate, 'PP')}</p>
             {/* grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 */}
-            <div className='mt-10 ml-32'>
+            <div className='mt-10 ml-40'>
                 {
                     appointmentOptions.map(option => <ReservationOption
                         key={option._id}

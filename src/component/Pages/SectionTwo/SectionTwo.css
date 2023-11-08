@@ -25,6 +25,10 @@
  margin-top: 100px;
 } */
 
+.sectiontwo{
+	background-color: #0A2647;
+}
+
 #menu-flters ul li a {
     padding: 10px 20px;
     font-size: 14px;
@@ -70,8 +74,8 @@
 .menu-subtitle {
     display: block;
     float: left;
-    color: white;
-    font-size: 1.2rem;
+    color: black;
+    font-size: 18px;
 }
 
 .menu-restaurant span.clearfix {

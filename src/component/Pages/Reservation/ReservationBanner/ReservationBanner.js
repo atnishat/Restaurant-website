@@ -1,16 +1,18 @@
 import React from 'react';
 import { DayPicker } from 'react-day-picker';
-import banner from '../../../asset/home.png'
+import banner from '../../../asset/reservation1.jpg'
 
-const ReservationBanner = ({selectedDate, setSelectedDate}) => {
+import './banner.css'
+
+const ReservationBanner = ({selectedDate, setSelectedDate,}) => {
     return (
-       <header className='py-6 bg-slate-800'>
+       <header className='py-6'>
           <h2 className='text-xl font-bold text-center mb-10'>Please, Select a date for your reservation.</h2>
             <div className="hero">
               
-                <div className="hero-content flex-col lg:flex-row-reverse bg-slate-800">
-                    <img src={banner} alt="dentist chair" className="max-w-sm rounded-lg shadow-2xl" />
-                    <div className='mr-10 sm:w-full'>
+                <div className="hero-content flex-col lg:flex-row-reverse">
+                    <img src={banner} alt="dentist chair" className="add max-w-sm rounded-lg " />
+                    <div className='mr-10 sm:w-full '>
                         <DayPicker
                             mode='single'
                             selected={selectedDate}

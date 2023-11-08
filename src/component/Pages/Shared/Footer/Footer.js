@@ -5,7 +5,7 @@ import Design from '../../design/Design';
 
 const Footer = () => {
     return (
-       <div className='bg-slate-800 pt-24'>
+       <div className='bg-white pt-24'>
          <footer
         style={{
             background: `url(${footer})`,
@@ -13,7 +13,7 @@ const Footer = () => {
             
         }}
     className="p-10 ">
-        <div className='footer ml-10'>
+        <div className='footer text-center text-cyan-500'>
             <div>
                 <span className="footer-title">Services</span>
                 <Link to="/" className="link link-hover">Branding</Link>
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
         </div>
         <div className='text-center mt-32'>
-            <p>Copyright © 2022 - All right reserved by Tasnim Cuisine. Developed By Tasnim_Nishat & Ahsan Habib</p>
+            <p>Copyright © 2022 - All right reserved by Tasnim Cuisine. Developed By Nishat & Sanji</p>
         </div>
     </footer>
     {/* <Design></Design> */}

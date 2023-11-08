@@ -61,8 +61,8 @@ const ReservationModal = ({ treatment, setTreatment, selectedDate, refetch }) =>
     return (
         <>
             <input type="checkbox" id="booking-modal" className="modal-toggle" />
-            <div className="modal">
-                <div className="modal-box relative">
+            <div className="modal sectiontwo">
+                <div className="modal-box relative sectiontwos">
                     <label htmlFor="booking-modal" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h3 className="text-lg font-bold">{reservationName}</h3>
                     <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 mt-10'>
@@ -81,7 +81,7 @@ const ReservationModal = ({ treatment, setTreatment, selectedDate, refetch }) =>
                         <input name="phone" type="number" placeholder="Phone Number" className="input w-full input-bordered" />
                         <input name="numberOfPeople" type="number" min="2" max="15" placeholder="Mention how many people" className="input w-full input-bordered" />
                         <br />
-                       <input className='btn btn-outline w-full' type="submit" value="Submit" />
+                       <input className='btn btn-outline w-full'  type="submit" value="Submit" />
                     </form>
                 </div>
             </div>

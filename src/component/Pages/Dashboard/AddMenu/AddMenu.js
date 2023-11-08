@@ -57,7 +57,7 @@ const AddMenu = () => {
 
 
     return (
-        <div className='w-96 p-7 ml-40'>
+        <div className='bg-cyan-500 mt-20 w-96 p-7 ml-60'>
             <h2 className="text-4xl">Add A Special Menu</h2>
             <form onSubmit={handleSubmit(handleAddDoctor)}>
                 <div className="form-control w-full max-w-xs">

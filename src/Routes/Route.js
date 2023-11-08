@@ -18,6 +18,8 @@ import AllBookings from "../component/Pages/Dashboard/AllBookings/AllBookings"
 import Menu from "../component/Pages/Menu/Menu";
 import Payment from "../component/Pages/Dashboard/Payment/Payment";
 import Contact from "../component/Pages/Shared/Contract/Contact";
+import Profile from "../component/Pages/Shared/Profile/Profile";
+import AllPayment from "../component/Pages/Dashboard/AllPayment/AllPayment";
 
 
 export const router = createBrowserRouter([
@@ -57,6 +59,11 @@ export const router = createBrowserRouter([
                 path:'/contract',
                 element:<Contact></Contact>
             }
+            ,
+            {
+                path:'/profile',
+                element:<Profile></Profile>
+            }
             
         ]
     },
@@ -85,10 +92,17 @@ export const router = createBrowserRouter([
                 element:<AdminRoute><AllBookings></AllBookings></AdminRoute>
             }
             ,{
+                   path:'/dashboard/allpayments',
+                element:<AdminRoute><AllPayment></AllPayment></AdminRoute>
+            }
+            ,{
                    path:'/dashboard/payment/:id',
-                element:<PrivateRoute><Payment></Payment></PrivateRoute>,
+                element:<Payment></Payment>,
                 loader:({params}) => fetch(`http://localhost:5000/allbookings/${params.id}`)
             }
         ]
     }
 ])
+
+
+// payment remove priveroute 

@@ -1,0 +1,18 @@
+.anime{
+    position: relative;
+    animation-name: info;
+    animation-duration: 7s;
+    animation-delay: 2s;
+  }
+  
+@keyframes info {
+   75%  { left:0px; top:0px;}
+    0%   { left:0px; top:200px;}
+ }
+
+ .sectiontwo{
+	background-color: #0A2647;
+}
+.sectionss{
+	background-color: #144272;
+}

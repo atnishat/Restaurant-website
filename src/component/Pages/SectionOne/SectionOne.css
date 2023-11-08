@@ -1,7 +1,32 @@
+.zoom-in-out-box {
+	/* margin: 0px;
+	width:px;
+	height: 50px; */
+	/* background: #f50057; */
+	animation: zoom-in-zoom-out 1s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+	0% {
+	  transform: scale(1, 1);
+	}
+	20% {
+	  transform: scale(1.2, 1.2);
+	}
+	/* 100% {
+	  transform: scale(1, 1);
+	} */
+  }
+
+.sectiontwo{
+	background-color: white;
+}
+
 .container {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+	
 }
 .hero__wrapper {
 	display: flex;
@@ -38,7 +63,7 @@ hero__heading {
 }
 
 .hero__imgWrapper img{
-    width: 500px;
+    width: 400px;
     height: auto;
 }
 

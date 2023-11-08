@@ -3,6 +3,10 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import UseToken from '../../../hooks/UseToken';
+import img from '../../asset/verification-removebg-preview.png'
+
+
+
 
 const Login = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
@@ -37,13 +41,18 @@ const Login = () => {
             });
     }
     return (
-        <div>
+        <div className='sectiontwo'>
             <div className='h-[800px] flex justify-center items-center'>
+            <div className='w-[450px] mr-32'>
+                <img src={img} alt="" />
+            </div>
+
+
                 <div className='w-96 p-7  border-2'>
                     <h2 className='text-xl text-center'>Login</h2>
                     <form onSubmit={handleSubmit(handleLogin)}>
                         <div className="form-control w-full max-w-xs">
-                            <label className="label"> <span className="label-text bg-black">Email</span></label>
+                            <label className="label"> <span className="label-text">Email</span></label>
                             <input type="text"
                                 {...register("email", {
                                     required: "Email Address is required"

@@ -19,7 +19,7 @@ const Menu = () => {
 
 
     return (
-        <div className='grid pt-28 gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-slate-800'>
+        <div className='grid pt-28 gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-base-200'>
             { 
             users.map(user => <AllMenu
                 key={user.id}

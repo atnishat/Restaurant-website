@@ -4,6 +4,7 @@ import { toast } from 'react-hot-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../Contexts/AuthProvider';
 import UseToken from '../../../hooks/UseToken';
+import img from '../../asset/36-removebg-preview.png'
 
 const Signup = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -14,7 +15,7 @@ const Signup = () => {
     const navigate = useNavigate();
 
 
-    if(token){
+    if (token) {
         navigate('/');
     }
 
@@ -32,9 +33,9 @@ const Signup = () => {
                     displayName: data.name
                 }
                 updateUser(userInfo)
-                    .then(() => { 
+                    .then(() => {
                         saveUser(data.name, data.email);
-                        
+
                     })
                     .catch(err => console.log(err));
             })
@@ -44,8 +45,8 @@ const Signup = () => {
             });
     }
 
-    const saveUser = (name, email) =>{
-        const user ={name, email};
+    const saveUser = (name, email) => {
+        const user = { name, email };
         fetch('http://localhost:5000/users', {
             method: 'POST',
             headers: {
@@ -53,11 +54,11 @@ const Signup = () => {
             },
             body: JSON.stringify(user)
         })
-        .then(res => res.json())
-        .then(data =>{
-            setCreatedUserEmail(email);
-            //  navigate('/');
-        })
+            .then(res => res.json())
+            .then(data => {
+                setCreatedUserEmail(email);
+                //  navigate('/');
+            })
     }
 
 
@@ -66,7 +67,12 @@ const Signup = () => {
 
 
     return (
-        <div className='h-[800px] flex justify-center items-center'>
+        <div className='h-[800px] flex justify-center items-center sectiontwo'>
+
+            <div className='w-[450px] mr-32'>
+                <img src={img} alt="" />
+            </div>
+
             <div className='w-96 p-7 border-2'>
                 <h2 className='text-xl text-center'>Sign Up</h2>
                 <form onSubmit={handleSubmit(handleSignUp)}>

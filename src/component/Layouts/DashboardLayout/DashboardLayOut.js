@@ -27,6 +27,7 @@ const DashboardLayOut = () => {
                             isAdmin && <>
                                 <li><Link to="/dashboard/allusers">All Users</Link></li>
                                 <li><Link to="/dashboard/allbookings">All Reservations</Link></li>
+                                <li><Link to="/dashboard/allpayments">All Payments</Link></li>
                                 <li><Link to="/dashboard/addmenu">Add Menu</Link></li>
                                 <li><Link to="/dashboard/specialmenu">Special Menu</Link></li>
                                 
