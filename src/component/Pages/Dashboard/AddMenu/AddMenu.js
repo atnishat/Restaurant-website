@@ -57,11 +57,11 @@ const AddMenu = () => {
 
 
     return (
-        <div className='bg-cyan-500 mt-20 w-96 p-7 ml-60'>
-            <h2 className="text-4xl">Add A Special Menu</h2>
+        <div className='bg-slate-600 mt-20 w-96 p-7 ml-60'>
+            <h2 className="text-4xl text-white">Add A Special Menu</h2>
             <form onSubmit={handleSubmit(handleAddDoctor)}>
                 <div className="form-control w-full max-w-xs">
-                    <label className="label"> <span className="label-text">Name Of Dish</span></label>
+                    <label className="label"> <span className="label-text text-white">Name Of Dish</span></label>
                     <input type="text" {...register("name", {
                         required: "Name is Required"
                     })} className="input input-bordered w-full max-w-xs" />
@@ -69,34 +69,34 @@ const AddMenu = () => {
                 </div>
 
                 <div className="form-control w-full max-w-xs">
-                    <label className="label"> <span className="label-text">Price</span></label>
+                    <label className="label"> <span className="text-white label-text">Price</span></label>
                     <input type="text" {...register("price", {
                         required: true
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.price && <p className='text-red-500'>{errors.price.message}</p>}
                 </div>
                 <div className="form-control w-full max-w-xs">
-                    <label className="label"> <span className="label-text">Description</span></label>
+                    <label className="label"> <span className="label-text text-white">Description</span></label>
                     <input type="text" {...register("description", {
                         required: true
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.description && <p className='text-red-500'>{errors.description.message}</p>}
                 </div>
                 <div className="form-control w-full max-w-xs">
-                    <label className="label"> <span className="label-text">Menu For</span></label>
+                    <label className="label"> <span className="label-text text-white">Menu For</span></label>
                     <input type="text" {...register("time", {
                         required: true
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.time && <p className='text-red-500'>{errors.time.message}</p>}
                 </div>
                 <div className="form-control w-full max-w-xs">
-                    <label className="label"> <span className="label-text">Photo</span></label>
+                    <label className="label"> <span className="label-text text-white">Photo</span></label>
                     <input type="file" {...register("image", {
                         required: "Photo is Required"
                     })} className="input input-bordered w-full max-w-xs" />
                     {errors.img && <p className='text-red-500'>{errors.img.message}</p>}
                 </div>
-                <input className='btn btn-outline w-full mt-4' value="Add Menu" type="submit" />
+                <input className='btn btn-outline w-full mt-4 text-white' value="Add Menu" type="submit" />
             </form>
         </div>
     );

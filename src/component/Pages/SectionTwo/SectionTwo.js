@@ -6,13 +6,13 @@ const SectionTwo = () => {
        
            
 
-            <section id="menu_list" className="mt-20 section-padding bg-base-200 body pb-32">
+            <section id="menu_list" className="mt-20 section-padding  body pb-32">
                 <div className="container pt-20">
                     <div className="col-md-12 text-center mb-14">
                         <h1 className="header-h text-cyan-500 text-2xl">Menu List</h1>
                         <p className="header-p mt-6 text-xl text-cyan-500">
-                            Curious which components explicitly require jQuery, our JS, a
-                            omponents link below. If you’re at all .
+                            Our menu a symphony of flavours from starters to sumptuous
+                            delights .
                         </p>
                     </div>
                     <input type="radio" id="all" name="food" />
@@ -157,7 +157,7 @@ const SectionTwo = () => {
                             >food item for diner</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
-                            <span className="menu-price">25.99</span>
+                            <span className="menu-price">$25.99</span>
                         </span>
                         <span className="menu-subtitle"
                         >Bagel Pizza, Asparagus Frittata  Air Fried chicken </span

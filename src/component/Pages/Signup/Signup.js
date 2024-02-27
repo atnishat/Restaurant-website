@@ -67,7 +67,7 @@ const Signup = () => {
 
 
     return (
-        <div className='h-[800px] flex justify-center items-center sectiontwo'>
+        <div className='h-[800px] flex justify-center items-center'>
 
             <div className='w-[450px] mr-32'>
                 <img src={img} alt="" />
@@ -102,7 +102,7 @@ const Signup = () => {
                     <input className='btn btn-outline w-full mt-4' value="Sign Up" type="submit" />
                     {signUpError && <p className='text-red-600'>{signUpError}</p>}
                 </form>
-                <p>Already have an account <Link className='text-white' to="/login">Please Login</Link></p>
+                <p>Already have an account <Link className='text-black' to="/login">Please Login</Link></p>
                 {/* <div className="divider">OR</div> */}
                 {/* <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
 

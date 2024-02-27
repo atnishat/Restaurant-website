@@ -34,7 +34,7 @@ const AllPayment = () => {
                                 <th>{i + 1}</th>
                                 <td>{user.bookingId}</td>
                                 <td>{user.email}</td>
-                                <td className='text-green-600 font-serif font-semibold'>Paid : ${user.price}</td>
+                                <td >Paid : ${user.price}</td>
                                 <td>{user.transactionId}</td>
                                 {/* <td>{user.transactionId}</td> */}
                                

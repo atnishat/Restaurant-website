@@ -4,7 +4,7 @@ const AllMenu = ({ user }) => {
     const { name, price, description, image,menufor } = user
     return (
         <div>
-            <div className="card w-96 bg-cyan-500 shadow-xl ml-6">
+            <div className="card w-96 bg-slate-600 shadow-xl ml-6">
                 <figure className=" pt-10">
                     <img className="mask mask-decagon w-80 h-52 border-black border-2" src={image} />
                 </figure>

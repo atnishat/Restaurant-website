@@ -41,7 +41,7 @@ const Login = () => {
             });
     }
     return (
-        <div className='sectiontwo'>
+        <div className=''>
             <div className='h-[800px] flex justify-center items-center'>
             <div className='w-[450px] mr-32'>
                 <img src={img} alt="" />
@@ -76,7 +76,7 @@ const Login = () => {
                             {loginError && <p className='text-red-600'>{loginError}</p>}
                         </div>
                     </form>
-                    <p>New to Tasnim Cuisine <Link className='text-white' to="/signup">Create new Account</Link></p>
+                    <p>New to Cuisine Connect <Link className='text-black' to="/signup">Create new Account</Link></p>
 
                     {/* <div className="divider">OR</div>
                     <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button> */}
