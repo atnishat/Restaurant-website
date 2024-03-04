@@ -29,7 +29,7 @@ const SectionTwo = () => {
                         <span className="clearfix">
                             {/* <a href="/" ></a> */}
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for breakfast</a>
+                            >.........Breakfast............</a>
                             {/* <span style="left: 166px; right:44px" className="menu-line"></span> */}
                             <span className="menu-price">$10.99</span>
                         </span>
@@ -41,7 +41,7 @@ const SectionTwo = () => {
                     <div className="breakfast menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for breakfast</a
+                            >.........Breakfast..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$22.00</span>
@@ -53,19 +53,19 @@ const SectionTwo = () => {
                     <div className="breakfast menu-restaurant  text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for breakfast</a
+                            >.........Breakfast..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$16.00</span>
                         </span>
                         <span className="menu-subtitle"
-                        >Simple nutty pancakes Breakfast bagel club</span
+                        >Simple nutty poached egg pancakes Breakfast bagel club</span
                         >
                     </div>
                     <div className="breakfast menu-restaurant  text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for breakfast</a
+                            > .........Breakfast..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$14.99</span>
@@ -79,20 +79,20 @@ const SectionTwo = () => {
                     <div className="lunch menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for lunch</a
+                            >.........Lunch..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$30.99</span>
                         </span>
                         <span className="menu-subtitle"
-                        >Panzanella Salad, Classic Wedge and Rice bowl</span
+                        >Panzanella Salad,poached egg Classic Wedge and Rice bowl</span
                         >
                     </div>
 
                     <div className="lunch menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for lunch</a
+                            >.........Lunch..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$26.99</span>
@@ -104,19 +104,19 @@ const SectionTwo = () => {
                     <div className="lunch menu-restaurant text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for lunch</a
+                            >.........Lunch..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$18.00</span>
                         </span>
                         <span className="menu-subtitle"
-                        >Egg Roll in a Bowl Garden Pasta Salad With Rotini</span
+                        >Egg Roll in a poached egg Bowl Garden Pasta Salad With Rotini</span
                         >
                     </div>
                     <div className="lunch menu-restaurant  text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for lunch</a
+                            >.........Lunch..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$19.00</span>
@@ -129,7 +129,7 @@ const SectionTwo = () => {
                     <div className="diner menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for diner</a
+                            >.........Diner..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$32.00</span>
@@ -142,7 +142,7 @@ const SectionTwo = () => {
                     <div className="diner menu-restaurant mt-20 text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for diner</a
+                            >.........Diner..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$35.99</span>
@@ -154,19 +154,19 @@ const SectionTwo = () => {
                     <div className="diner menu-restaurant text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for diner</a
+                            >.........Diner..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$25.99</span>
                         </span>
                         <span className="menu-subtitle"
-                        >Bagel Pizza, Asparagus Frittata  Air Fried chicken </span
+                        >Bagel Pizza,poached egg Asparagus Frittata  Air Fried chicken </span
                         >
                     </div>
                     <div className="diner menu-restaurant text-cyan-500">
                         <span className="clearfix">
                             <a href="/" className="menu-title" data-meal-img=""
-                            >food item for diner</a
+                            >.........Diner..........</a
                             >
                             {/* <span style="left: 166px; right: 44px" className="menu-line"></span> */}
                             <span className="menu-price">$54.99</span>
